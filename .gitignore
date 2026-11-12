@@ -1,0 +1,17 @@
+# Keep real environment files and authentication exports out of version control.
+.env*
+!.env_example
+.secrets/
+*cookie*
+*.pem
+*.key
+
+# Submission plans contain source code; receipts and rankings contain account IDs.
+reports/*
+!reports/.gitkeep
+plans/
+receipts/
+
+__pycache__/
+*.py[cod]
+.venv/
